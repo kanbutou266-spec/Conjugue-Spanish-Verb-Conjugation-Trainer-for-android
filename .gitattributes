@@ -1,0 +1,14 @@
+# 统一用 LF，避免跨平台协作时整文件换行符 diff
+* text=auto eol=lf
+
+# Windows 脚本必� CRLF（否则 cmd 解析出错）
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# 侜码不做换行符转换
+*.png binary
+*.jpg binary
+*.webp binary
+*.ttf binary
+*.jar binary
